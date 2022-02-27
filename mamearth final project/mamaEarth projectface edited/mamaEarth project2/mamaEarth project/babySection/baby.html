@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://mamaearth.in/_next/static/icon_96x96.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="baby.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style>
+        .border{
+                border: 1px solid red;
+            }
+        #bannerimage{
+height: 375px;
+width: 100%;
+ 
+        }
+
+        #bannerimage>img{
+      height:100%;
+      width: 100%;
+        }
+        #babycareproducts{
+            height: 40px;
+            width: 100%;
+             
+           margin-top: 20px;
+           display: flex;
+        }
+
+        #anchor{
+            height: 20px;
+            width: 40px;
+          
+            margin-top: 11px;
+            margin-left: 100px;
+            font-size: 14px;
+        
+        }
+        #anchor>a{
+            text-decoration: none;
+            color: cornflowerblue;
+            padding-right: 10px;
+            margin-top: 10px;
+        }
+        #anchor>a:hover{
+            text-decoration:underline;
+            color: skyblue;
+        }
+    
+        #baby{
+            margin-top: -3px;
+            height: 20px;
+            width: 200px;
+            
+            padding-bottom: 5px;
+        color: gray;
+        font-weight: 100;
+        font-size: 14px;
+        }
+        #seller{
+            height: 120px;
+            width: 135px;
+            margin-left: 80px;
+           
+        }
+        #seller>h2{
+            font-weight: 300;
+        }
+
+        #bestseller{
+            height: 500px;
+            width: 1100px;
+            border: 0.1px solid gray;
+            margin: auto;
+            display: flex;
+            justify-content:space-around;
+            margin-top: -70px;
+       
+        }
+        #bestseller>div{
+            height: 500px;
+            width: 250px;
+             
+            padding: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            transition: all 0.3s ease 0s;
+        }
+        .a>a{
+            height: 50%;
+            width: 90%;
+            text-decoration: none;
+            
+        }
+        .a>a>img{
+            height: 60%;
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+        }
+        .b{
+            color: grey;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .c{
+            text-align: center;
+            background-color: olivedrab;
+            height: 24px;
+            width: 45px;
+            margin: auto;
+            color: white;
+            border-radius: 2px;
+            display: flex;
+            text-align: center;
+            margin-top: 10px;
+            
+        }
+        .c>span{
+            padding-top: 1px;
+            padding-left: 4px;
+            margin-left: 1px;
+            font-size: small;
+            text-align: center;
+            margin-top: 5px;
+            
+        }
+        .c>span:nth-child(2){
+            font-size: 10px;
+            padding-top: 3px;
+        }
+        #price{
+            height: 20px;
+            width: 50px;
+           margin: auto;
+        padding-top: 5px;
+        /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+            margin-top: 10px;
+        }
+        #wholeBlue{
+            height: 45px;
+            width: 95%;
+            margin: auto;
+            margin: 0 0 0 3px;
+        color: rgb(0, 175, 239);
+        background-color: white;
+        border: 1 px solid grey;
+        margin-top: 10px;
+       
+        }
+        #wholeBlue:hover{
+            background-color: rgb(0, 175, 239);
+            color: white;
+            
+        }
+        #secondh2{
+            height: 75px;
+            width: 90%;
+            margin: auto;
+           
+            display: flex;
+            margin-left: 80px;
+        }
+        #secondh2>h2{
+            padding-bottom: 5px;
+            margin-left: 10px;
+            font-weight: 200;
+          
+        }
+        #sort{
+          
+            height: 40px;
+            width: 100px;
+            margin-left: 875px;
+           color: deepskyblue;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 15px;
+            
+        }
+
+        #sort>h2{
+            margin-top: 25px;
+        }
+        #buttons{
+            height: 40px;
+            width: 800px;
+           
+            display: flex;
+           margin-top: 15px;
+           justify-content:space-around;
+           margin-left: 80px;
+           margin-top: 20px;
+        }
+
+      
+      #buttons>div{
+          margin: auto;
+           
+      }
+      #buttons>div>button{
+        border-radius: 90px;
+        background-color:white;
+        color: darkgray;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      #buttons>div>button:hover{
+          border: 1px solid deepskyblue;
+          color:deepskyblue;
+      }
+        #allproducts{
+            height: 2350px;
+            width: 85%;
+            border: 2px solid black;
+            margin: auto;
+            display: grid;
+        grid-template-rows: repeat(4,450px);
+        grid-template-columns: repeat(4,250px);
+        gap: 15px;
+        }
+        #allproducts>div{
+
+             
+          margin-left: 10px;
+        }
+
+
+        #last{
+            width: 100%;
+            height: 2500px;
+             
+            background-color: whitesmoke;
+        }
+        #lastpart{
+            width: 90%;
+            height: 2500px;
+           
+            margin: auto;
+        }
+        #last>p{
+            color: black;
+            padding: 1500px;
+            margin-left: 60px;
+            text-align: center;
+
+        }
+#lastpart>h2{
+    color: #777777;
+}
+    #faqs{
+        height: 300px;
+        width: 90%;
+        margin: auto;
+        border: 1px solid black;
+    }
+    .collapsible{
+        height: 200px;
+        width: 90%;
+        border: 2px solid black;
+    }
+    .collapsible {
+
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+#logo{
+    height: 50px;
+    width: 60px;
+    margin-left: 1200px;
+    position:absolute; left:80px; top:550px;
+    position: fixed;
+    transition: .1s ease;
+  backface-visibility: hidden;
+}
+
+
+#logo>img{
+    height: 50px;
+    width: 50px;
+}
+#logo>img:hover{
+     opacity: 0.7;
+     color: #444;
+ }
+    </style>
+</head>
+<body>
+<!-- chat logo -->
+<div id="logo">
+    <img src="https://mamaearthp.imgix.net/wysiwyg/ChatIcon12%20Jan.png.png" alt="bubble-icon">
+</div>
+
+
+<!-- bannerimage -->
+
+
+    <div id="bannerimage">
+<img src="https://images.ctfassets.net/66mrrren2unf/5p5pVTewrOIcFmKeO0vbEP/906047d607f9e314f88109359e2866fb/WOW_WEBSITE-_1920x512_.jpg?q=40" alt="">
+    </div>
+
+    <div id="babycareproducts">
+<div id="anchor"><a href="">Home</a></div>
+<div id="baby"><p> > Baby care products</p></div>
+ 
+    </div>
+   
+    <div style="text-align: center;margin-top: -15px; font-size: 16px;"> <h1>Baby Care Products</h1></div>
+<div id="seller"><h2>BestSeller</h2></div>
+
+<div id="bestseller">
+    <div class="a">
+        <a href="">
+            <img src="https://honasa-mamaearth-production.imgix.net/_/m/_milky-soft-body-lotion__1.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+        
+            <div class="b">
+                <p>Milky Soft Lotion Babies with Oats,Milk and Calendula-400ml</p>
+            </div>
+            <div class="c">
+                <span>4.8</span>
+                <span class="fa fa-star checked"></span>
+                
+               
+            </div>
+            <div id="price">
+                <i class="fa fa-rupee"></i>
+                 <i style="font-family: sansfaris ;">399</i>
+            </div>
+            <button id="wholeBlue">ADD TO CART</button> 
+        </a> 
+       
+        </div>
+        <!-- secondbox -->
+    <div class="a">
+        
+        <a href="">
+         <img src="https://honasa-mamaearth-production.imgix.net/_/m/_milky_soft_face_cream_.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+            <div class="b">
+                <p>Milky Soft Lotion Babies with Oats,Milk and Calendula-400ml</p>
+            </div>
+            <div class="c">
+                <span>4.8</span>
+                <span class="fa fa-star checked"></span>
+                
+               
+            </div>
+            <div id="price">
+                <i class="fa fa-rupee"></i>
+                 <i style="font-family: sansfaris ;">399</i>
+            </div>
+            <button id="wholeBlue">ADD TO CART</button> 
+        </a> 
+       
+        
+    </div>
+    <div class="a">
+        <a href="">
+         <img src="https://honasa-mamaearth-production.imgix.net/n/o/nourishing-bathing-bars_2_anb6wlrvagej2noa.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+            <div class="b">
+                <p>Milky Soft Lotion Babies with Oats,Milk and Calendula-400ml</p>
+            </div>
+            <div class="c">
+                <span>4.8</span>
+                <span class="fa fa-star checked"></span>
+                
+               
+            </div>
+            <div id="price">
+                <i class="fa fa-rupee"></i>
+                 <i style="font-family: sansfaris ;">399</i>
+            </div>
+        
+        </a> 
+        <button id="wholeBlue">ADD TO CART</button>  
+ 
+    </div>
+
+    <div class="a">
+        <a href="">
+            <img src="https://honasa-mamaearth-production.imgix.net/b/a/baby_hair_oil_200_ml_1200x1200__yh1i6qtlgyc253s5.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+            <div class="b">
+                <p>Milky Soft Lotion Babies with Oats,Milk and Calendula-400ml</p>
+            </div>
+            <div class="c">
+                <span>4.8</span>
+                <span class="fa fa-star checked"></span>
+                
+               
+            </div>
+            <div id="price">
+                <i class="fa fa-rupee"></i>
+                 <i style="font-family: sansfaris ;">399</i>
+            </div>
+            <button id="wholeBlue">ADD TO CART</button> 
+        </a> 
+       
+    </div>
+</div>
+<div id="secondh2">
+    <div id="">
+        <h2>Our Products</h2>
+    </div>
+    <div id="sort">Sort By</div>
+  
+</div>
+
+<div id="buttons">
+    <div class="all"><button>ALL</button></div>
+    <div class="all"><button>DIAPER</button></div>
+    <div class="all"><button>SHAMPOO</button></div>
+    <div class="all"><button>LOTION</button></div>
+    <div class="all"><button>OIL</button></div>
+    <div class="all"><button>POWDER</button></div>
+    <div class="all"><button>BATH</button></div>
+    <div class="all"><button>ORAL CARE</button></div>
+    <div class="all"><button>SKIN</button></div>
+</div>
+<div id="allproducts">
+<div class="a" >
+    <a href="">
+      <img src="https://honasa-mamaearth-production.imgix.net/s/t/strawberry-body-lotions.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+        <div class="b">
+            <p>Super Strawberry Body Lotion for Kids With Strawberry & Shwa Butter-400ml</p>
+        </div>
+        <div class="c">
+            <span>5.0</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div>
+<div class="a">
+    <a href="">
+       <img src="https://honasa-mamaearth-production.imgix.net/o/r/orange-body-lotions.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+        <div class="b">
+            <p>Original Orange Body Lotion For Kids WithOrange & Shea Butter -400ml</p>
+        </div>
+        <div class="c">
+            <span>5.0</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div>
+<div  class="a">
+    <a href="">
+        <img src="https://honasa-mamaearth-production.imgix.net/m/a/mango-body-lotions.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+        <div class="b">
+            <p>Milky Soft Lotion Babies with Oats,Milk and Calendula-400ml</p>
+        </div>
+        <div class="c">
+            <span>5.0</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div  class="a">
+    <a href="">
+        <img src="https://honasa-mamaearth-production.imgix.net/b/a/baby_hair_oil_200_ml_1200x1200__yh1i6qtlgyc253s5.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+        <div class="b">
+            <p>Major Mango Body Lotion For Kids with Mango Butter & Milk Protein -400ml</p>
+        </div>
+        <div class="c">
+            <span>5.0</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+       <img src="https://honasa-mamaearth-production.imgix.net/b/r/brave-blueberry-body-lotion.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+        <div class="b">
+            <p>Brave Blueberry Body Lotion For Kids with Blueberry and Kokum Butter-400ml</p>
+        </div>
+        <div class="c">
+            <span>4.8</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+       <img src="https://honasa-mamaearth-production.imgix.net/a/g/agent_apple-body-lotion.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+        <div class="b">
+            <p>Agent Apple Body Lotion for Kids with Apple & Oat Milk-400ml</p>
+        </div>
+        <div class="c">
+            <span>4.9</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+       <img src="https://honasa-mamaearth-production.imgix.net/m/i/milky-soft-lip-balm-1.jpg?auto=compress&fit=scale&w=400&h=400" alt=""> 
+       <div class="b">
+            <p>Milky Soft Body Lotion for Babies with Oats, Milk and Calendula</p>
+        </div>
+        <div class="c">
+            <span>4.8</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div  class="a">
+    <a href="">
+       <img src="https://honasa-mamaearth-production.imgix.net/m/i/milky-soft-shampoo-1_1.jpg?auto=compress&fit=scale&w=400&h=400" alt=""> <div class="b">
+            <p>Milky Soft Shampoo with Oats, Milk and Calendula for Babies-400ml</p>
+        </div>
+        <div class="c">
+            <span>4.0</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">199</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div  class="a">
+    <a href="">
+      <img src="https://honasa-mamaearth-production.imgix.net/n/o/nourishing-bathing-bars_2_anb6wlrvagej2noa.jpg?auto=compress&fit=scale&w=400&h=400" alt=""> 
+        <div class="b">
+            <p>Nourishing Bathing Bar Soap For Kids-(Pack of 5.75gEach</p>
+        </div>
+        <div class="c">
+            <span>5.0</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">799</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+      <img src="https://honasa-mamaearth-production.imgix.net/g/r/green_apple_baby_body_wash_1_1_.jpg?auto=compress&fit=scale&w=400&h=400" alt=""> 
+       <div class="b">
+            <p>Original Orange Body Wash For Kids with Orange and Oat Protein-400ml</p>
+        </div>
+        <div class="c">
+            <span>4.8</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+     <img src="https://honasa-mamaearth-production.imgix.net/b/a/baby-wipes-72pc.jpg?auto=compress&fit=scale&w=400&h=400" alt=""> 
+       <div class="b">
+            <p>Agent Apple Body  Wash for Kids With Apple and Oat Protein-400ml</p>
+        </div>
+        <div class="c">
+            <span>4.8</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">299</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+     <img src="https://honasa-mamaearth-production.imgix.net/i/m/img_4758probs_m8kpntsmliael8wv.jpg?auto=compress&fit=scale&w=400&h=400" alt=""> 
+      <div class="b">
+            <p>Milky Soft Lotion Babies with Deeply Oats,Milk and Calendula-400ml</p>
+        </div>
+        <div class="c">
+            <span>4.8</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+       <img src="https://honasa-mamaearth-production.imgix.net/i/m/img_4758probs_m8kpntsmliael8wv.jpg?auto=compress&fit=scale&w=400&h=400" alt=""> 
+       <div class="b">
+            <p>Milky Soft Lotion Babies with Oats,Milk and Calendula-400ml</p>
+        </div>
+        <div class="c">
+            <span>4.8</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+      <img src="https://honasa-mamaearth-production.imgix.net/b/a/baby-essential-hamper-kit_1_sv72nonvryczkplz.jpg?auto=compress&fit=scale&w=400&h=400" alt="">  <div class="b">
+            <p>Milky Soft Lotion Babies with Oats,Milk and Calendula
+                -400ml & baby Hamper</p>
+        </div>
+        <div class="c">
+            <span>4.8</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+       <img src="https://honasa-mamaearth-production.imgix.net/t/r/tropical-garden_1_dztxrrj0a10opgxx.jpg?auto=compress&fit=scale&w=400&h=400" alt="">     <div class="b">
+            <p>Milky Soft Lotion Babies with Oats,Milk and Calendula-400ml</p>
+        </div>
+        <div class="c">
+            <span>4.0</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">499</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+        <img src="https://honasa-mamaearth-production.imgix.net/f/d/fds_9681-with-props_8cpplsjatrkaufgc.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+        <div class="b">
+            <p>MMineral Based Sunscreen 50ml</p>
+        </div>
+        <div class="c">
+            <span>4.2</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">529</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+       <img src="https://honasa-mamaearth-production.imgix.net/w/e/welcome-baby-essential-kit_iov2mdbdmdyyv6vu.jpg?auto=compress&fit=scale&w=400&h=400" alt="">  <div class="b">
+            <p>Welcome Baby Essential Kit</p>
+        </div>
+        <div class="c">
+            <span>4.4</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+        <img src="https://honasa-mamaearth-production.imgix.net/f/e/feas_e2hikzccrtagpx45.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+          <div class="b">
+            <p>Plant Based laundary detergent,200ml</p>
+        </div>
+        <div class="c">
+            <span>3.8</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+        <img src="https://honasa-mamaearth-production.imgix.net/f/d/fds_8272.probs__bbyeqaj8igzukojb.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+        <div class="b">
+            <p>Baby Essential Hamper Kit</p>
+        </div>
+        <div class="c">
+            <span>4.8</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">399</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+<div class="a" >
+    <a href="">
+        <img src="https://honasa-mamaearth-production.imgix.net/b/a/baby_wash_shampoo_200ml__1_thiyam45awzwysks.jpg?auto=compress&fit=scale&w=400&h=400" alt="">
+        <div class="b">
+            <p>Deeply Nourishing Body Wash for Babies 200ml and Gentle Cleansing  </p>
+        </div>
+        <div class="c">
+            <span>4.0</span>
+            <span class="fa fa-star checked"></span>
+            
+           
+        </div>
+        <div id="price">
+            <i class="fa fa-rupee"></i>
+             <i style="font-family: sansfaris ;">699</i>
+        </div>
+        <button id="wholeBlue">ADD TO CART</button> 
+    </a> 
+   
+</div  >
+</div>
+
+
+  <!-- FAQ SEction -->
+<div class="collapsible">
+<h1 style="text-align: center;text-decoration-line: underline;">FAQ'S</h1>
+<h1></h1>
+<p></p>
+    
+</div>
+   
+       <!-- FOOTER part  need to add her-->
+
+<div id="last">
+<div id="lastpart">
+    <h2>Toxin-Free Mamaearth Baby Care Products for Gentle Care</h2>
+    <p>
+        Growing a child is a profoundly enriching experience. Surely, it comes with its highs and lows, but it also comes with the added responsibility of becoming solely responsible for a living being’s life, and you will do anything to provide them the best and protected lifestyle. So, whether you are looking for safe and effective baby care items for your little munchkin, Mamaearth delivers the best for him. We offer a wide range of the best baby care products, from baby hair care to baby oral care and skin care. 
+        It is important to understand the needs of a baby’s body to help him have a better growth experience. Therefore, you should buy newborn baby care items made from the Goodness of Nature. These effective and mild products can be used every day without any second thoughts.
+        At Mamaearth, we offer the best  that are toxin-free and made from natural ingredients. Devoid of any parabens, sulfate, and other harmful chemicals, they are just what you want for your baby skincare regimen. 
+    </p>
+    <h2>Must-Have Baby Care Essentials for Your Baby</h2>
+    <p>To help you prepare for baby skin and body care in the best way possible, here are some of the must-have products that should be on your online shopping list. </p>
+
+<p>Massage Oil: If you want your baby to stay healthy and strong, giving them a massage with  is a must. Enriched with essential oils, it helps in soothing dry skin and making their bones strong. 
+    Shampoo: Washing your baby’s scalp removes the dirt from the scalp and hair, besides deeply moisturizing and nourishing them. Also, the best helps maintain the 5.6 pH level of the skin. This helps reduce irritation and inflammation on his skin too. 
+    Toothpaste: Your baby would not need toothpaste immediately after birth, but he surely would after a few months. To prevent their mouth from becoming a breeding ground for cavities, it is essential to clean their teeth regularly with the best . In addition, it will also help promote better oral care.
+    Diapers: The main purpose of wearing a disposable baby diaper is to absorb the moisture of the baby’s excretions so that the baby does not become fussy. Also, it protects the babies from skin infections and rashes. 
+    Lotion: As the best  for your little one, it deeply moisturizes his tender skin. Using a nourishing  protects your child from the sun’s UV rays and locks in moisture in the skin cells. 
+    Powder: A 100% natural and talc-free dusting powder that does not clog the lungs. A gentle ensures that your skin stays free from sweat or dryness. Also, such a gentle powder helps prevent diaper rashes. 
+    You should also opt for a baby care kit that includes baby skin care products- you never know when it would come in handy! </p>
+
+<h2>Tips for Keeping the Baby’s Skin Healthy</h2>
+
+<p>
+    Baby’s Skin is 5 Times Thinner Than Adults: Baby’s brand new, soft skin needs to be moisturized, just like yours. As a baby’s skin is thinner and delicate than adults', it requires a nourishing body lotion that deeply moisturizes their skin and keeps seasonal dryness away. 
+    Do Not Ignore Cradle Cap: Cradle Cap is a common hygiene condition in babies. It is yellow, greasy, and flaky dandruff with a foul smell. However, it can be easily treated by regularly washing his hair with the best baby shampoo and applying toxin-free baby hair oil. It removes irritants and grime from the hair, balances the skin’s pH, and leaves the hair soft and smooth. 
+    Bathing a Newborn Baby: Most mothers bathe their baby 2-3 times a week. It is important to keep the baby’s skin clean by using soft and toxin-free . This would keep him clean and free from infection or inflammation. 
+    Sun Safety for New Born Baby: Sun protection for babies under six months is a must. You should cover their head, make them wear loose clothes, or apply lotion. It is advisable to keep babies at home between 10 am and 2 pm in the summer season to avoid heat waves.
+    Giving Your Baby a Proper Bath: Babies need a regular bathing and cleansing session with toxin-free . A gentle and nourishing soap helps treat the damaged skin with antibacterial properties. It also balances the skin’s delicate pH and keeps away dryness. Suppose you feel difficulty rubbing the soap against your baby’s fragile skin. In that case, you may choose the best . It would offer better moisturization and gently wash away the dirt, besides maintaining the pH level of the sensitive skin.
+    Baby Lip Balm: Winters make our skin drier and chapped. Since the babies’ facial skin is tender and fragile, keeping the baby’s lip hydrated and moisturized is important. Applying a coat of provides adequate hydration and nutrition and protects them from the sun’s harmful rays.
+    Mosquito Repellent Cream: As your baby’s skin is sensitive and has low immunity, it is crucial to protect them from dengue, malaria, and chikungunya. You should use a safe and toxin-free , especially at night. Applying this moisture cream for baby will keep your baby protected from dryness and itching.
+    Baby Diapers: A dry baby’s bottom means less friction on your baby’s delicate skin, which means less skin irritation and more comfort. To prevent your baby’s skin from irritation, red rashes, and infections, it is essential to use the best baby diapers medium size. 
+    Baby Cream: While diapers can help you prevent leakage and dryness, they could also cause rashes to the baby’s sensitive skin. Applying a  to the affected area is essential to calm this redness and skin irritation. 
+</p>
+<h2></h2>
+
+
+<p>
+    Yes, there is so much needed to maintain a newborn and turn them into a perfect human being. Indeed, it is a beautiful journey. These were some other essentials that your must have. 
+Star Ingredients in Our Baby Care Range 
+
+Coconut Oil: Helps reduce irritation and inflammation. It also helps in retaining moisture and prevents skin from excessive dryness. 
+Aloe Barbadensis: Helps keep gum diseases, infections, and oral cavities away. It also soothes kids’ phase of teething.
+Almond Oil: This non-fragrant oil of almond seeds is best for the baby’s soft and tender skin. 
+Milk Protein: Helps in soothing dry and irritated skin. Rich in healing and nourishing properties, it hydrates the skin and locks in moisture.
+Calendula: Rich in Vitamin E and Amino acids, it deeply nourishes the skin. It also provides enhanced antifungal, antioxidant, and anti-inflammatory benefits. 
+</p>
+
+<p>
+    Mamaearth Bestsellers: Baby Care
+Mamaearth Gentle Cleansing Shampoo
+This  is enriched with Coconut, Jojoba Oil, Aloe Vera Extract, and Calendula Extract. It deeply nourishes a baby’s delicate scalp and removes dust and grime. A regular element of every baby care products list, it also reduces irritation and inflammation on the scalp.
+Mamaearth Soothing Massage Oil
+Backed by the power of Sesame oil, Olive oil, Jojoba Oil, Almond Oil, this helps in improving the skin’s elasticity and smoothness. It also provides essential minerals and vitamins to keep the skin nourished, softer, and glowing. 
+Milky Soft Face Cream with Murumuru Butter for Babies
+As one of the best products for baby care, it provides deep hydration and moisturization to remove itchiness or dryness on the facial skin. This gently nourishes and soothes dryness in the skin. It also helps in locking the skin’s moisture without making it greasy.
+Moisturizing Daily Lotion for Babies
+This  prevents the skin from getting dry. It nourishes and moisturizes the skin deeply. Enriched with cocoa butter and Calendula extract, it assists in healing dry and damaged skin with the help of its antibacterial, antifungal, and healing properties. 
+Nourishing Hair Oil for Babies
+A mild, gentle, and non-sticky product for your baby. This helps in nourishing the hair roots. Made with Jojoba Oil, Avocado Oil, and Almond Oil, it effectively helps treat the cradle cap by soothing the scalp and providing enough moisturization and nourishment. In addition, it also helps in unclogging the blocked hair follicles and treating the dry scalp. 
+Deeply Nourishing Body Wash for Babies
+A 100% toxic-free formula provides moisturization and nourishment to a baby’s tender skin. This is a gentle and that makes your baby bath time fun. In addition, its regular use helps maintain the pH balance of the baby’s tender skin. 
+Enriched with orange and aloe vera extracts, this skincare product prevents the skin from excessive dryness. In addition, the essential oils provide certain antiseptic and anti-inflammatory ingredients that help protect and heal the skin.
+</p>
+</div>
+
+ <!-- class Help will be on top -->
+ <div id="help">
+    <h6 style="margin: -6px -6px 0 8px;">help ?</h6>
+</div>
+<!-- add every thing from here -->
+<div id="treeBox">
+    <div class="contentTree" style="text-align: center;">
+        <h3 style="font-weight: 600;">We Plant Goodness</h3>
+        <img src="https://mamaearthp.imgix.net/wysiwyg/strip2x.png?auto=format" style="height: 1.75px; width: 10vw; margin-right: 10px; margin-top: -35px;">
+        <h4 style="color: #8fc957; font-size: 36px; font-weight: 900; margin-top: -10px;">46,811</h4>
+        <h4 style="font-size: 18px;">Trees have got life already... <br> Everytime you buy from us, we plant more trees!</h4>
+        <a href="https://mamaearth.in/plant"><button style="background-color: #01afef; color: white; border: none; width: 140px; height: 40px; border-radius: 5px;">Know More</button></a>
+    </div>
+</img>
+</div>
+
+<div id="certiBox">
+    <div class="certificate">
+        <a href="wearesafe.html"><img src="https://mamaearthp.imgix.net/wysiwyg/dermatology-tested-100x100.png?auto=format&amp;fit=100%2C100&amp;ssl=1" alt="Dermatologically Tested" title="Dermatologically Tested"></a>
+        <div style="margin-left: 5px;">
+            <h5>Dermatologically Tested</h5>
+            <p style="font-size: 14px;">We ensure each product is tested clinically on the sensitive human skin to ensure that it is not allergic.</p>
+        </div>
+    </div>
+    <div class="certificate">
+        <a href="http://wearesafe.html"><img src="https://mamaearthp.imgix.net/wysiwyg/fda-100x100.jpg?auto=format&amp;fit=100%2C100&amp;ssl=1" alt="FDA Approved" title="FDA Approved"></a>
+        <div style="margin-left: 5px;">
+            <h5>FDA Approved</h5>
+            <p style="font-size: 14px;">MamaEarth is FDA approved, which means we are 100% safe to be used for babies as well as mamas.</p>
+        </div>
+    </div>
+    <div class="certificate">
+        <a href="http://wearesafe.html"><img src="https://mamaearthp.imgix.net/wysiwyg/msafe-100x100.jpg?auto=format&amp;fit=100%2C100&amp;ssl=1" alt="Made Safe Certified" title="Made Safe Certified"></a>
+        <div style="margin-left: 5px;">
+            <h5>Made Safe Certified</h5>
+            <p style="font-size: 14px;">The MADE SAFE (Made with Safe Ingredients™) seal means that a product is literally made with safe ingredients.</p>
+        </div>
+    </div>
+</div>
+<div style="text-align: center;">
+    <h3>What Our Customers Say</h3>
+    <img src="https://mamaearthp.imgix.net/wysiwyg/strip2x.png?auto=format" style="height: 1.75px; width: 20vw; margin-right: 10px; margin-top: -30px;">
+</div>
+<div class="container" style="border: 1px solid red !important;" >
+    <div class="row">
+        <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+            <div class="MultiCarousel-inner">
+                <div class="item">
+                    <div class="pad15">
+                        <p>I use Mamaearth Ubtan Face Wash. It gives me an instant natural glow. I love that the products are natural and don't contain any harmful preservatives. Plus the products are quite affordable.</p>
+                        <div class="information">
+                            <img alt="Sajal Goyal" src="https://mamaearthp.imgix.net/wysiwyg/Sajal_Goyal_GKFmIuZ.jpg?auto=format" >
+                            <div>
+                                <p></p>
+                                <div>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p>I use Mamaearth Ubtan Face Wash. It gives me an instant natural glow. I love that the products are natural and don't contain any harmful preservatives. Plus the products are quite affordable.</p>
+                        <div class="information">
+                            <img alt="Sajal Goyal" src="https://mamaearthp.imgix.net/wysiwyg/Sajal_Goyal_GKFmIuZ.jpg?auto=format" >
+                            <div>
+                                <p></p>
+                                <div>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p>I use Mamaearth Ubtan Face Wash. It gives me an instant natural glow. I love that the products are natural and don't contain any harmful preservatives. Plus the products are quite affordable.</p>
+                        <div class="information">
+                            <img alt="Sajal Goyal" src="https://mamaearthp.imgix.net/wysiwyg/Sajal_Goyal_GKFmIuZ.jpg?auto=format" >
+                            <div>
+                                <p></p>
+                                <div>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p>I use Mamaearth Ubtan Face Wash. It gives me an instant natural glow. I love that the products are natural and don't contain any harmful preservatives. Plus the products are quite affordable.</p>
+                        <div class="information">
+                            <img alt="Sajal Goyal" src="https://mamaearthp.imgix.net/wysiwyg/Sajal_Goyal_GKFmIuZ.jpg?auto=format" >
+                            <div>
+                                <p></p>
+                                <div>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p>I use Mamaearth Ubtan Face Wash. It gives me an instant natural glow. I love that the products are natural and don't contain any harmful preservatives. Plus the products are quite affordable.</p>
+                        <div class="information">
+                            <img alt="Sajal Goyal" src="https://mamaearthp.imgix.net/wysiwyg/Sajal_Goyal_GKFmIuZ.jpg?auto=format" >
+                            <div>
+                                <p></p>
+                                <div>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <p>I use Mamaearth Ubtan Face Wash. It gives me an instant natural glow. I love that the products are natural and don't contain any harmful preservatives. Plus the products are quite affordable.</p>
+                        <div class="information">
+                            <img alt="Sajal Goyal" src="https://mamaearthp.imgix.net/wysiwyg/Sajal_Goyal_GKFmIuZ.jpg?auto=format" >
+                            <div>
+                                <p></p>
+                                <div>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                    <i class="fas fa-star" style="color: #ffc107;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary leftLst"><</button>
+            <button class="btn btn-primary rightLst">></button>
+        </div>
+    </div>
+</div>
+<!--  -->
+<div class="shiping">
+    <div class="shipleft">
+        <img src="https://mamaearthp.imgix.net/wysiwyg/mobile-truck.png?auto=format" srcset="https://mamaearthp.imgix.net/wysiwyg/mobile-truck.png?auto=format 44w,
+              https://mamaearthp.imgix.net/wysiwyg/delivery2x.png?auto=format 155w" sizes="(max-width: 767px) 22px, 3rem" loading="lazy">
+        <h4 style="font-size: 16px;">Free Shipping</h4>
+        <p style="font-size: 14px;">On Order Above Rs. 399</p>
+    </div>
+    <div class="shipmid">
+        <img src="https://mamaearthp.imgix.net/wysiwyg/mobile-wallet.png?auto=format" srcset="https://mamaearthp.imgix.net/wysiwyg/mobile-wallet.png?auto=format 34w,
+              https://mamaearthp.imgix.net/wysiwyg/Group_81512x.png?auto=format 127w" sizes="(max-width: 767px) 17px, 2.75rem" loading="lazy">
+        <h4 style="font-size: 16px;">COD Available</h4>
+        <p style="font-size: 14px; line-height: 8px;">@ Rs. 40 On Per Order</p>
+    </div>
+    <div class="shipright">
+        <h3 style="font-size: 22px;">Have Queries or Concerns? Contact Us</h3>
+        <button>CONTACT US</button>
+    </div>
+</div>
+<div class="payment">
+    <div class="lpay">
+        <h4>PAYMENT</h4>
+        <p><img src="https://mamaearthp.imgix.net/wysiwyg/noun_trusted_27146262x_6Ekja92.png">100% Payment Protection, Easy Return Policy</p>
+        <div>
+            <img src="https://mamaearthp.imgix.net/wysiwyg/visa2x.png">
+            <img src="https://mamaearthp.imgix.net/wysiwyg/master_card2x.png">
+            <img src="https://mamaearthp.imgix.net/wysiwyg/american_express2x.png">
+            <img src="https://mamaearthp.imgix.net/wysiwyg/rupay2x.png">
+            <img src="https://mamaearthp.imgix.net/wysiwyg/net_banking2x.png">
+        </div>
+    </div>
+    <div class="rpay">
+        <div>
+            <img src="https://mamaearthp.imgix.net/wysiwyg/dermatology-tested-100x1002x.png">
+            <p>Dermatologically Tested</p>
+        </div>
+        <div>
+            <img src="https://mamaearthp.imgix.net/wysiwyg/fda-100x100.jpg">
+            <p>FDA Approved</p>
+        </div>
+        <div>
+            <img src="https://mamaearthp.imgix.net/wysiwyg/msafe-100x100.jpg">
+            <p>Made Safe Certified</p>
+        </div>
+    </div>
+</div>
+<div>
+    <footer class="bg-light text-center text-lg-start footer-box-low" style="border: 1px solid #ddd;">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase" style="text-align: left;">USEFUL LINKS</h5>
+      
+              <ul class="list-unstyled mb-0" style="text-align: left;">
+                <li>
+                  <a href="#!" class="text-dark">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Returns</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Terms & Conditions- Cashback</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-dark">Faqs</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">We're Safe</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Track Orders</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Contact US</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Sitemap</a>
+                  </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-0" style="text-align: left;">CATEGORIES</h5>
+      
+              <ul class="list-unstyled" style="text-align: left;">
+                <li>
+                  <a href="#!" class="text-dark">Baby</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Beauty</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase" style="text-align: left;">OUR STORES</h5>
+      
+              <ul class="list-unstyled mb-0" style="text-align: left;">
+                <li>
+                  <a href="#!" class="text-dark">New Delhi</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Mumbai</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Pune</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Chennai</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-dark">Kolkata</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-dark">Nagpur</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-0" style="text-align: left;">MY ACCOUNT</h5>
+      
+              <ul class="list-unstyled" style="text-align: left;">
+                <li>
+                  <a href="#!" class="text-dark" style="color: #ccc;">Account</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Orders</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Addressess</a>
+                </li>
+              </ul>
+            </div>
+            
+            <img class="col-rig" src="https://mamaearthp.imgix.net/wysiwyg/Best-Brand500x5002x.png" alt="">
+            
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        
+        <div class="footer-bottom" style="border: 1px solid #ddd;">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center p-3" >
+                       <h3 style="font-size: 20px;">SHOW US SOME <i class="fas fa-heart" style="color: red;"></i> LOVE ON SOCIAL MEDIA</h3> 
+                    </div>
+                    <div class="col footer-social" style="font-size: 22px;">
+                        <a href="#"><i class="fab fa-facebook-f" style="color: #989898;width: 4%;"></i></a> 
+                        <a href="#"><i class="fab fa-twitter" style="color: #989898;width: 4%;"></i></a> 
+                        <a href="#"><i class="fas fa-envelope" style="color: #989898;width: 4%;"></i></a>  
+                        <a href="#"><i class="fab fa-instagram" style="color: #989898;width: 4%;"></i></a>
+                        <a href="#"><i class="fab fa-youtube" style="color: #989898;width: 4%;"></i></a> 
+                        <a href="#"><i class="fab fa-pinterest" style="color: #989898;width: 4%;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="color: #989898;">
+                © 2021 Honasa Consumer Pvt. Ltd. All Rights Reserved
+            </div>
+        </div>
+      </footer>
+</div>
+</div>
+<script src="baby.js"></script>
+
+</body>
+</html>

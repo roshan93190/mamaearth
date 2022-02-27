@@ -1,0 +1,26 @@
+    #loginpage{
+        width: 30%;
+        height: 300px;
+        margin: auto;
+        margin-top: 50px;
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(224, 224, 224);
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    #form>div{
+        margin: 25px;
+    }
+    button{
+        text-align: right;
+        margin-left: 5px;
+    }
+    #sinup{
+        text-align: right;
+        margin-top: 40px;
+    }
+    #sub{
+        width: 50%;
+        background-color:rgb(0,174,239);
+    }

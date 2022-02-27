@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+        #container{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+        }
+  
+        #h1Tag{
+          text-align: center;
+        }
+  
+        a{
+          background-color: white;
+          color: black;
+          border: 1px solid black;
+          padding: 10px 17px;
+          margin-bottom: 15px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+  
+        }
+  
+        a:hover{
+          background-color: #e5eeee;
+        }
+  
+        #sorting{
+          background-color: black;
+          width: 350px;
+          height: 100px;
+        }
+  
+        #sorting{
+          background-color: white;
+          width: 350px;
+          height: 50px;
+          color:black;
+          border: 1px solid black;
+        }
+  
+        /* #button{
+          justify-content: space-between;
+        } */
+        
+        .impDiv{
+          /* border: 1px solid black; */
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        
+        }
+  
+        .cartDiv{
+           width: 90%;
+           height: 50px;
+           margin-left: 20px;
+           /* margin-right: 10px; */
+           margin-bottom: 10px;
+           background-color:white;
+           font-size: 25px;
+           color: rgb(0, 175, 239);
+           border: 1px solid rgb(0, 175, 239);
+        }
+  
+  
+        /* .priceDiv {
+          display: flex;
+          justify-content: space-around;
+        } */
+  
+  
+        @media only screen and (min-width: 0px) and (max-width: 320px){
+  
+          #container{
+            grid-template-columns: repeat(1, 1fr);
+          }
+        }
+  
+  
+        @media only screen and (min-width: 321px) and (max-width: 720px){
+  
+          #container{
+            grid-template-columns: repeat(4, 1fr);
+  }
+  }
+      </style>
+
+    </head>
+
+    <body>
+
+        <h1 id= "h1Tag">Cart Page</h1>
+
+        <h1 id= "total">0</h1>
+          <div id= "container">
+
+          </div>
+
+
+    </body>
+</html>
+
+<script>
+
+var cartArr = JSON.parse(localStorage.getItem("CartItems")) || [];
+console.log(cartArr)
+
+
+function DisplayData(items){
+    document.querySelector("#container").innerHTML= "";
+  console.log(items);
+  items.map(function (elem) {
+    var mainDiv = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+
+    var name = document.createElement("p");
+    name.innerText = elem.name;
+    name.style.textAlign= "center";
+    name.style.fontSize= "17px";
+
+    var innerDiv = document.createElement("div");
+
+    var price = document.createElement("p");
+    price.innerText = elem.price;
+    price.style.textAlign= "center";
+    price.style.fontSize= "20px";
+
+    // var strikedoffprice = document.createElement("s");
+    // strikedoffprice.innerText = elem.strikedoffprice;
+    //strikedoffprice.style.textDecoration = "line-through";
+
+    // innerDiv.append(price, strikedoffprice);
+    // innerDiv.setAttribute("class", "priceDiv");
+
+
+    mainDiv.append(img, name, price,);
+    mainDiv.setAttribute("class", "impDiv")
+
+    document.querySelector("#container").append(mainDiv);
+  });
+
+
+
+
+}
+
+// total 
+
+var total = cartArr.reduce(function(acc, item){
+
+    return acc + item.price;
+}, 0);
+
+console.log(total)
+
+
+document.getElementById("total").textContent= total;
+
+DisplayData(cartArr);
+
+</script>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      #container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+      
+      .impDiv{
+        /* border: 1px solid black; */
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      
+      }
+
+      .cartDiv{
+         width: 90%;
+         height: 50px;
+         margin-left: 20px;
+         /* margin-right: 10px; */
+         margin-bottom: 10px;
+         background-color:white;
+         font-size: 25px;
+         color: rgb(0, 175, 239);
+         border: 1px solid rgb(0, 175, 239);
+      }
+
+
+      /* .priceDiv {
+        display: flex;
+        justify-content: space-around;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>KITS</h1>
+    <h2>Our Products</h2>
+    <div id="container"></div>
+  </body>
+</html>
+<script src="./Data/KITDATA.js"></script>
+<script>
+  var kit = JSON.parse(localStorage.getItem("kit"));
+  console.log(kit);
+  kit.map(function (elem) {
+    var mainDiv = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+
+    var name = document.createElement("p");
+    name.innerText = elem.name;
+    name.style.textAlign= "center";
+    name.style.fontSize= "17px";
+
+    var innerDiv = document.createElement("div");
+
+    var price = document.createElement("p");
+    price.innerText = elem.price;
+    price.style.textAlign= "center";
+
+    // var strikedoffprice = document.createElement("s");
+    // strikedoffprice.innerText = elem.strikedoffprice;
+    //strikedoffprice.style.textDecoration = "line-through";
+
+    // innerDiv.append(price, strikedoffprice);
+    // innerDiv.setAttribute("class", "priceDiv");
+
+    var cart = document.createElement("button");
+    cart.innerText = "+ Add";
+    cart.setAttribute("class", "cartDiv");
+    cart.addEventListener("click", function () {
+      addToCart(elem);
+    });
+
+    mainDiv.append(img, name, price, cart);
+    mainDiv.setAttribute("class", "impDiv")
+
+    document.querySelector("#container").append(mainDiv);
+  });
+</script>
+
+<!-- // cart page // i wnat all items which i click on add -->

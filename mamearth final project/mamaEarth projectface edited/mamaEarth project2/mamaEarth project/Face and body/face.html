@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            
+            width:100%;
+        }
+        
+        
+         #inner_conatiner{
+            display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap : 20px;
+        margin-left: 3%;
+        
+        width: 50%;
+        
+
+         }
+         .mydiv{
+             margin-top: 20px;
+           padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+         }
+    #addtocart{
+        border : 1px solid green;
+        align-items: center;
+        padding: 20px;
+        margin-left: 34%;
+        /* color: rgb(0, 175, 239); */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    #text{
+        text-align: center;
+    }
+    #price{
+      text-align: center;
+    }
+         
+    
+    
+    #foot1{
+        width: 100%;
+        margin-left: 1px;
+    }
+   
+    .titleNameWithColor {
+    max-width: 95%;
+    width: 100%;
+    display: inline-block;
+    color: rgb(146, 201, 53);
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+#foot2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     margin-left: 10%;
+     margin-top: 10%;
+
+}
+#contact{
+    border-radius: 10%;
+    border-color: aqua;
+    color : aqua;
+}
+#payment{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    margin-top: 10px;
+}
+#pay2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 40px;
+    gap: 20px;
+    
+}
+.im{
+    height: 100px;
+    width: 100px;
+}
+#end{
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.62;
+    background-color: whitesmoke;
+    /* color: rgb(119, 119, 119); */
+    font-family: Lato;
+    
+}
+#rating{
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 10px;
+    width: max-content;
+    padding: 10px;
+    margin: auto;
+
+}
+#addtocart:hover{
+    background-color: green;
+}
+#end{
+    margin-left: 40px;
+    margin-right: 20px;
+}
+#end>h1{
+    /* color:#777777 */
+    padding: 10px;
+      color: rgb(119, 119, 119);
+      /* background-color: rgb(255, 255, 255); */
+}
+#end>p{
+    font-size: 20px;
+    padding: 10px;
+    line-height: 1.62;
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(119, 119, 119);
+    font-family: Lato;
+}
+    
+
+
+
+    /* button
+    {
+        text-align: center;
+        padding-left : 10px;
+        background-color: green;
+        color: white;
+    }   */
+
+</style>
+</head>
+<body>
+    <div id="main">
+    <div id="top">
+    <img src="https://images.ctfassets.net/66mrrren2unf/2Dt0h7FbdNUqWcQDy5IBSa/378a2256530ea153e89c4af9b38a8661/desktop_with_CTA.jpg?q=40" />
+    </div>
+ <div id="inner_conatiner">
+    <div class="mydiv" >
+        <img src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_foaming_face_wash_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+        <p  id="rating"> 3.9 ★ </p>
+        <h1 id="price">₹399</h1>
+        <button id="addtocart">+ ADD TO CART</button>  
+    </div>
+    <div class="mydiv">
+        <img src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_face_wash_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+            <p  id="rating"> 3.9 ★ </p>
+             <h1 id="price">₹399</h1>
+            <button id="addtocart">+ ADD TO CART</button>    
+     </div>
+     <div class="mydiv">   
+        <img src="https://honasa-mamaearth-production.imgix.net/u/b/ubtan_face_mask_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+            <p  id="rating"> 3.9 ★ </p>
+             <h1 id="price">₹399</h1>
+            <button id="addtocart">+ ADD TO CART</button>    
+    </div>
+    
+    <div class="mydiv">
+        <img src="https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_1_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+            <p  id="rating"> 3.9 ★ </p>
+             <h1 id="price">₹399</h1>
+            <button id="addtocart">+ ADD TO CART</button>        
+    </div>
+</div>
+  
+
+<div id="inner_conatiner">
+    <div class="mydiv">
+        <img src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_foaming_face_wash_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+        <p  id="rating"> 3.9 ★ </p>
+        <h1 id="price">₹399</h1>
+        <button id="addtocart">+ ADD TO CART</button>  
+    </div>
+    <div class="mydiv">
+        <img src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_face_wash_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+            <p  id="rating"> 3.9 ★ </p>
+             <h1 id="price">₹399</h1>
+            <button id="addtocart">+ ADD TO CART</button>    
+     </div>
+     <div class="mydiv">   
+        <img src="https://honasa-mamaearth-production.imgix.net/u/b/ubtan_face_mask_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+            <p  id="rating"> 3.9 ★ </p>
+             <h1 id="price">₹399</h1>
+            <button id="addtocart">+ ADD TO CART</button>    
+    </div>
+    
+    <div class="mydiv">
+        <img src="https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_1_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+            <p  id="rating"> 3.9 ★ </p>
+             <h1 id="price">₹399</h1>
+            <button id="addtocart">+ ADD TO CART</button>        
+    </div>
+</div>
+<div id="inner_conatiner">
+    <div  class="mydiv">
+        <img src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_foaming_face_wash_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+        <p  id="rating"> 3.9 ★ </p>
+        <h1 id="price">₹399</h1>
+        <button id="addtocart">+ ADD TO CART</button>  
+    </div>
+    <div  class="mydiv">
+        <img src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_face_wash_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+            <p  id="rating"> 3.9 ★ </p>
+             <h1 id="price">₹399</h1>
+            <button id="addtocart">+ ADD TO CART</button>    
+     </div>
+     <div  class="mydiv">   
+        <img src="https://honasa-mamaearth-production.imgix.net/u/b/ubtan_face_mask_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+            <p  id="rating"> 3.9 ★ </p>
+             <h1 id="price">₹399</h1>
+            <button id="addtocart">+ ADD TO CART</button>    
+    </div>
+    
+    <div  class="mydiv">
+        <img src="https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_1_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+            <p  id="rating"> 3.9 ★ </p>
+             <h1 id="price">₹399</h1>
+            <button id="addtocart">+ ADD TO CART</button>        
+    </div>
+</div>
+  
+  
+
+    
+    
+
+<div id="end">
+    <h1>Shop the Best Skin Care Products in India</h1>
+     <p> Smooth and flawlessly radiant skin! Don’t you wish you could achieve this with an effortless skincare regimen? Acing your skincare routine can be tricky if you don’t pick the right
+        face care products according to your skin type especially when the market is loaded with different face skin care suggestions everywhere. So, you have to be a little thoughtful
+        about the process.  Mamaearth’s product range includes an array of skin care products that work both for men and women. Enriched with the goodness of nature, these products
+        target skin concerns such as acne, dullness, dryness, excess oil production, pore congestion, dark spots, pigmentation, fine lines, amongst other skin problems. Though men keep it
+        traditionally simple, skincare experts have backed up the fact that using skincare for men is equally as important. For younger, healthier-looking skin, they also need to stick to an
+        effective AM-PM skincare routine.
+          </p>
+
+    <h1>Tips For Choosing the Right Skin Care Product For You</h1>
+
+<p>
+    Before you opt for any skincare product for yourself, it’s imperative to identify your skin type and underlying concerns because no one knows your skin better than you do. Some people may have oily or dry skin, while others may have sensitive skin. The whole process can be a little intimidating if you are not well-versed with your skin issues such as acne, dehydration, wrinkles, fine lines, pore-clogging, etc. At Mamaearth, we curate products keeping in mind different skin care concerns and assure no chemical ingredients in their
+</p>
+<h1>Mamaearths Best Selling Skin Care Products </h1>
+<p>Smooth and flawlessly radiant skin! Don’t you wish you could achieve this with an effortless skincare regimen? Acing your skincare routine can be tricky if you don’t pick the right
+    face care products according to your skin type especially when the market is loaded with different face skin care suggestions everywhere. So, you have to be a little thoughtful
+    about the process.  Mamaearth’s product range includes an array of skin care products that work both for men and women. Enriched with the goodness of nature, these products
+    target skin concerns such as acne, dullness, dryness, excess oil production, pore congestion, dark spots, pigmentation, fine lines, amongst other skin problems. Though men keep it
+    traditionally simple, skincare experts have backed up the fact that using skincare for men is equally as important. For younger, healthier-looking skin, they also need to stick to an
+    effective AM-PM skincare routine. </p>
+<h1>Here are some of our best-sellers products are: </h1>
+<p>Smooth and flawlessly radiant skin! Don’t you wish you could achieve this with an effortless skincare regimen? Acing your skincare routine can be tricky if you don’t pick the right
+    face care products according to your skin type especially when the market is loaded with different face skin care suggestions everywhere. So, you have to be a little thoughtful
+    about the process.  Mamaearth’s product range includes an array of skin care products that work both for men and women. Enriched with the goodness of nature, these products
+    target skin concerns such as acne, dullness, dryness, excess oil production, pore congestion, dark spots, pigmentation, fine lines, amongst other skin problems. Though men keep it
+    traditionally simple, skincare experts have backed up the fact that using skincare for men is equally as important. For younger, healthier-looking skin, they also need to stick to an
+    effective AM-PM skincare routine. </p>
+<h1>Skin Care Products Price List in India</h1>
+<p>Smooth and flawlessly radiant skin! Don’t you wish you could achieve this with an effortless skincare regimen? Acing your skincare routine can be tricky if you don’t pick the right
+    face care products according to your skin type especially when the market is loaded with different face skin care suggestions everywhere. So, you have to be a little thoughtful
+    about the process.  Mamaearth’s product range includes an array of skin care products that work both for men and women. Enriched with the goodness of nature, these products
+    target skin concerns such as acne, dullness, dryness, excess oil production, pore congestion, dark spots, pigmentation, fine lines, amongst other skin problems. Though men keep it
+    traditionally simple, skincare experts have backed up the fact that using skincare for men is equally as important. For younger, healthier-looking skin, they also need to stick to an
+    effective AM-PM skincare routine.</p>
+
+<!-- <img src="https://honasa-mamaearth-production.imgix.net/v/i/vit-c-under-eye-cream-1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+        <button>Rating 3.9 </button>
+         <h1 id="price">₹399</h1>
+        <img src="https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_2_2.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+        <button>Rating 3.9 </button>
+         <h1 id="price">₹399</h1>
+        <img src="https://honasa-mamaearth-production.imgix.net/s/k/skin-illuminate-face-serum-1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+        <button>Rating 3.9 </button>
+         <h1 id="price">₹399</h1>
+
+        <img src="https://honasa-mamaearth-production.imgix.net/s/k/skin-correct-face-serum-with-ingredient_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+        <button>Rating 3.9 </button>
+         <h1 id="price">₹399</h1>
+
+        <img src="https://honasa-mamaearth-production.imgix.net/c/h/charcoal_face_scrub_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+        <button>Rating 3.9 </button>
+         <h1 id="price">₹399</h1>
+
+        <img src="https://honasa-mamaearth-production.imgix.net/u/b/ubtan_face_scrub_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+        <button>Rating 3.9 </button>
+         <h1 id="price">₹399</h1>
+        
+        <img src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_face_toner_1.jpg?auto=compress&fit=scale&w=400&h=400" />
+        <h4 id="text">Vitamin C foaming Face Wash with vitamin C and Turmeric for Skin care</p>
+        <button>Rating 3.9 </button>
+         <h1 id="price">₹399</h1>
+ -->
+
+</div>
+ 
+</body>
+</html>

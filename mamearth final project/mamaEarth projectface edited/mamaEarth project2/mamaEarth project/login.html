@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div id="loginpage">
+    <h1>Log in to get started</h1>
+    <form id="form">
+        <div><input id="user" type="text" placeholder="Enter user Name"></div>
+        <div><input id="password" type="password" placeholder="Enter your password"></div>
+        <div><input type="submit" id="sub" value="Submit"></div>
+    </form>
+    <div id="sinup"><a href="signup.html">Click here to SIGN UP</a></div>
+    <!-- <div ><button onclick="window.location.href='signup.html'">Sign Up</button></div> -->
+</div>
+</body>
+</html>
+<script>
+    var regUser=JSON.parse(localStorage.getItem("signupData"));
+    document.querySelector("#form").addEventListener("submit",formSubmission);
+
+    var form=document.querySelector("#form");
+
+    function formSubmission(event){
+        event.preventDefault();
+        var user= document.querySelector("#user").value
+        var password=document.querySelector("#password").value;
+        //its like getting the input value instead of that document.queriseletor that thing
+        var flag=false;
+    for(var i=0;i<regUser.length;i++)
+        {
+           
+            if(regUser[i].user===user && regUser[i].password===password )
+            {
+                flag=true;
+               
+            }
+        }
+        if(flag===false)
+        {
+            alert("Login Failed")
+        }
+        if(flag===true){
+           
+            document.querySelector("#sub").addEventListener("click",successFunction)
+            function successFunction(event){
+                event.preventDefault();
+                window.location.href="home1.html"
+            }
+        }
+    }
+   
+</script>
